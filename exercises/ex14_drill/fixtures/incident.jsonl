@@ -1,0 +1,20 @@
+{"action": "refund", "args": {"amount": 42.0, "key": "k-r5103", "order": "ORD-5103"}, "kind": "intent", "op": "op-r5103", "request_hash": "4eed172c8f1e5871", "seq": 1, "tool": "payments"}
+{"kind": "sent", "op": "op-r5103", "seq": 2}
+{"kind": "timeout", "op": "op-r5103", "seq": 3}
+{"action": "send", "args": {"subject": "Refund issued for ORD-5103", "to": "c5103@example.com"}, "kind": "intent", "op": "op-m5103", "request_hash": "4803147c03f55c00", "seq": 4, "tool": "mailer"}
+{"kind": "sent", "op": "op-m5103", "seq": 5}
+{"kind": "timeout", "op": "op-m5103", "seq": 6}
+{"action": "set_description", "args": {"sku": "SKU-4471", "text": "Back in stock"}, "kind": "intent", "op": "op-s4471", "request_hash": "8d3ace9c778a7aaa", "seq": 7, "tool": "storefront"}
+{"kind": "sent", "op": "op-s4471", "seq": 8}
+{"kind": "timeout", "op": "op-s4471", "seq": 9}
+{"action": "refund", "args": {"amount": 18.5, "key": "k-r5104", "order": "ORD-5104"}, "kind": "intent", "op": "op-r5104", "request_hash": "74c5d79149dd86f7", "seq": 10, "tool": "payments"}
+{"kind": "sent", "op": "op-r5104", "seq": 11}
+{"error": "payments rejected op-r5104", "kind": "response", "ok": false, "op": "op-r5104", "seq": 12}
+{"action": "set_description", "args": {"sku": "SKU-9102", "text": "Back in stock"}, "kind": "intent", "op": "op-s9102", "request_hash": "0147896a876409aa", "seq": 13, "tool": "storefront"}
+{"kind": "sent", "op": "op-s9102", "seq": 14}
+{"kind": "timeout", "op": "op-s9102", "seq": 15}
+{"action": "refund", "args": {"amount": 63.0, "key": "k-r5105", "order": "ORD-5105"}, "kind": "intent", "op": "op-r5105", "request_hash": "597a1d00df443f53", "seq": 16, "tool": "payments"}
+{"kind": "sent", "op": "op-r5105", "seq": 17}
+{"kind": "timeout", "op": "op-r5105", "seq": 18}
+{"action": "send", "args": {"subject": "Refund issued for ORD-5105", "to": "c5105@example.com"}, "kind": "intent", "op": "op-m5105", "request_hash": "accae762269b3a83", "seq": 19, "tool": "mailer"}
+{"by": "operator", "kind": "stop", "op": null, "seq": 20}

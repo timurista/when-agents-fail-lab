@@ -1,0 +1,104 @@
+[
+ {"name": "plain",
+  "steps": [
+   ["decide", {"id": "g1", "key": "SKU-4471", "goal": "lead with the waxed canvas", "replaces": null}],
+   ["arrive", {"id": "r1", "decision": "g1", "key": "SKU-4471", "content": "Waxed canvas that shrugs off rain."}]
+  ],
+  "expect": {
+   "SKU-4471": {"state": "current", "content": "Waxed canvas that shrugs off rain.", "labels": {"r1": "admitted"}}
+  }},
+ {"name": "old-result-after-new",
+  "steps": [
+   ["decide", {"id": "g1", "key": "SKU-4471", "goal": "lead with the waxed canvas", "replaces": null}],
+   ["decide", {"id": "g2", "key": "SKU-4471", "goal": "lead with the recycled lining", "replaces": "g1"}],
+   ["arrive", {"id": "r2", "decision": "g2", "key": "SKU-4471", "content": "Lined with recycled bottles."}],
+   ["arrive", {"id": "r1", "decision": "g1", "key": "SKU-4471", "content": "Waxed canvas that shrugs off rain."}]
+  ],
+  "expect": {
+   "SKU-4471": {"state": "current", "content": "Lined with recycled bottles.", "labels": {"r1": "superseded", "r2": "admitted"}}
+  }},
+ {"name": "old-result-first",
+  "steps": [
+   ["decide", {"id": "g1", "key": "SKU-4471", "goal": "lead with the waxed canvas", "replaces": null}],
+   ["decide", {"id": "g2", "key": "SKU-4471", "goal": "lead with the recycled lining", "replaces": "g1"}],
+   ["arrive", {"id": "r1", "decision": "g1", "key": "SKU-4471", "content": "Waxed canvas that shrugs off rain."}]
+  ],
+  "expect": {
+   "SKU-4471": {"state": "pending", "content": null, "labels": {"r1": "superseded"}}
+  }},
+ {"name": "cancel-before-result",
+  "steps": [
+   ["decide", {"id": "g1", "key": "SKU-4471", "goal": "lead with the waxed canvas", "replaces": null}],
+   ["decide", {"id": "c1", "key": "SKU-4471", "goal": null, "replaces": "g1"}],
+   ["arrive", {"id": "r1", "decision": "g1", "key": "SKU-4471", "content": "Waxed canvas that shrugs off rain."}]
+  ],
+  "expect": {
+   "SKU-4471": {"state": "cancelled", "content": null, "labels": {"r1": "cancelled"}}
+  }},
+ {"name": "cancel-after-admit",
+  "steps": [
+   ["decide", {"id": "g1", "key": "SKU-4471", "goal": "lead with the waxed canvas", "replaces": null}],
+   ["arrive", {"id": "r1", "decision": "g1", "key": "SKU-4471", "content": "Waxed canvas that shrugs off rain."}],
+   ["decide", {"id": "c1", "key": "SKU-4471", "goal": null, "replaces": "g1"}]
+  ],
+  "expect": {
+   "SKU-4471": {"state": "cancelled", "content": null, "labels": {"r1": "admitted"}}
+  }},
+ {"name": "duplicate-delivery",
+  "steps": [
+   ["decide", {"id": "g1", "key": "SKU-4471", "goal": "lead with the waxed canvas", "replaces": null}],
+   ["arrive", {"id": "r1", "decision": "g1", "key": "SKU-4471", "content": "Waxed canvas that shrugs off rain."}],
+   ["arrive", {"id": "r1", "decision": "g1", "key": "SKU-4471", "content": "Waxed canvas that shrugs off rain."}]
+  ],
+  "expect": {
+   "SKU-4471": {"state": "current", "content": "Waxed canvas that shrugs off rain.", "labels": {"r1": "admitted"}}
+  }},
+ {"name": "reused-id",
+  "steps": [
+   ["decide", {"id": "g1", "key": "SKU-4471", "goal": "lead with the waxed canvas", "replaces": null}],
+   ["arrive", {"id": "r1", "decision": "g1", "key": "SKU-4471", "content": "Waxed canvas that shrugs off rain."}],
+   ["arrive", {"id": "r1", "decision": "g1", "key": "SKU-4471", "content": "Waxed canvas, now in olive."}]
+  ],
+  "expect": {
+   "SKU-4471": {"state": "current", "content": "Waxed canvas that shrugs off rain.", "labels": {"r1": "admitted"}}
+  }},
+ {"name": "check-write-race",
+  "steps": [
+   ["decide", {"id": "g1", "key": "SKU-4471", "goal": "lead with the waxed canvas", "replaces": null}],
+   ["arrive", {"id": "r1", "decision": "g1", "key": "SKU-4471", "content": "Waxed canvas that shrugs off rain."}, {"id": "g2", "key": "SKU-4471", "goal": "lead with the recycled lining", "replaces": "g1"}]
+  ],
+  "expect": {
+   "SKU-4471": {"state": "pending", "content": null, "labels": {"r1": "superseded"}}
+  }},
+ {"name": "independent-keys",
+  "steps": [
+   ["decide", {"id": "g1", "key": "SKU-4471", "goal": "lead with the waxed canvas", "replaces": null}],
+   ["decide", {"id": "k1", "key": "SKU-9102", "goal": "mention the padded strap", "replaces": null}],
+   ["arrive", {"id": "s1", "decision": "k1", "key": "SKU-9102", "content": "Now with a padded strap."}],
+   ["arrive", {"id": "r1", "decision": "g1", "key": "SKU-4471", "content": "Waxed canvas that shrugs off rain."}]
+  ],
+  "expect": {
+   "SKU-4471": {"state": "current", "content": "Waxed canvas that shrugs off rain.", "labels": {"r1": "admitted"}},
+   "SKU-9102": {"state": "current", "content": "Now with a padded strap.", "labels": {"s1": "admitted"}}
+  }},
+ {"name": "competing-corrections",
+  "steps": [
+   ["decide", {"id": "g1", "key": "SKU-4471", "goal": "lead with the waxed canvas", "replaces": null}],
+   ["decide", {"id": "g2", "key": "SKU-4471", "goal": "lead with the recycled lining", "replaces": "g1"}],
+   ["decide", {"id": "g3", "key": "SKU-4471", "goal": "lead with the free repairs", "replaces": "g1"}],
+   ["arrive", {"id": "r3", "decision": "g3", "key": "SKU-4471", "content": "Repaired free for as long as you own it."}],
+   ["arrive", {"id": "r2", "decision": "g2", "key": "SKU-4471", "content": "Lined with recycled bottles."}]
+  ],
+  "expect": {
+   "SKU-4471": {"state": "conflict", "content": null, "labels": {"r2": "held_conflict", "r3": "held_conflict"}}
+  }},
+ {"name": "correction-reaches-board-late",
+  "steps": [
+   ["decide", {"id": "g1", "key": "SKU-4471", "goal": "lead with the waxed canvas", "replaces": null}],
+   ["arrive", {"id": "r1", "decision": "g1", "key": "SKU-4471", "content": "Waxed canvas that shrugs off rain."}],
+   ["decide", {"id": "g2", "key": "SKU-4471", "goal": "lead with the recycled lining", "replaces": "g1"}]
+  ],
+  "expect": {
+   "SKU-4471": {"state": "pending", "content": null, "labels": {"r1": "admitted"}}
+  }}
+]

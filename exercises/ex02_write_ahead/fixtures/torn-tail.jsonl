@@ -1,0 +1,6 @@
+{"action": "set_description", "args": {"sku": "SKU-4471", "text": "Waxed canvas tote, 18 L"}, "kind": "intent", "op": "op-t0412-1", "request_hash": "453a39db3d2b5e64", "seq": 1, "t": 0.0, "tool": "storefront"}
+{"kind": "sent", "op": "op-t0412-1", "seq": 2, "t": 0.1}
+{"kind": "response", "ok": true, "op": "op-t0412-1", "receipt": {"before": "", "receipt": "rcpt-0001", "sku": "SKU-4471", "version": 1}, "seq": 3, "t": 0.6}
+{"action": "set_description", "args": {"sku": "SKU-9102", "text": "Enamel camp mug, 350 ml"}, "kind": "intent", "op": "op-t0412-2", "request_hash": "d512e5353ca4ec19", "seq": 4, "t": 0.7, "tool": "storefront"}
+{"kind": "sent", "op": "op-t0412-2", "seq": 5, "t": 0.8}
+{"kind": "response", "ok": true, "op": "

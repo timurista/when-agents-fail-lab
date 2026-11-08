@@ -1,0 +1,46 @@
+{
+  "run": "run-1107",
+  "agent": "fernhill-ops",
+  "log": "run.jsonl",
+  "claims": [
+    {
+      "id": "c1",
+      "text": "Updated 12 product descriptions",
+      "kind": "descriptions_updated",
+      "count": 12
+    },
+    {
+      "id": "c2",
+      "text": "Refunded ORD-5521 ($48.00)",
+      "kind": "refund_issued",
+      "order": "ORD-5521",
+      "amount": 4800
+    },
+    {
+      "id": "c3",
+      "text": "Emailed the customer about the refund",
+      "kind": "email_sent",
+      "to": "jo.park@example.com"
+    },
+    {
+      "id": "c4",
+      "text": "All 48 description checks pass",
+      "kind": "tests_pass",
+      "path": "test-output.txt",
+      "count": 48
+    },
+    {
+      "id": "c5",
+      "text": "Wrote report.csv, one row per SKU",
+      "kind": "file_written",
+      "path": "report.csv",
+      "rows": 12,
+      "one_row_per": {"action": "set_description", "arg": "sku"}
+    },
+    {
+      "id": "c6",
+      "text": "No other listings were changed",
+      "kind": "nothing_else_changed"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{"action": "refund", "kind": "intent", "op": "op-a", "seq": 1, "t": 0, "tool": "payments"}
+{"kind": "sent", "op": "op-a", "seq": 2, "t": 0}
+{"error": "order already refunded", "kind": "response", "ok": false, "op": "op-a", "seq": 3, "t": 1}
+{"action": "set_description", "kind": "intent", "op": "op-b", "seq": 4, "t": 2, "tool": "storefront"}
+{"kind": "sent", "op": "op-b", "seq": 5, "t": 2}
+{"kind": "timeout", "op": "op-b", "seq": 6, "t": 7}
+{"kind": "timeout", "op": "op-b", "seq": 7, "t": 37}
+{"kind": "timeout", "op": "op-b", "seq": 8, "t": 3600}
+{"action": "set_description", "kind": "intent", "op": "op-c", "seq": 9, "t": 3, "tool": "storefront"}
+{"kind": "sent", "op": "op-c", "seq": 10, "t": 3}
+{"kind": "timeout", "op": "op-c", "seq": 11, "t": 8}
+{"found": true, "kind": "status", "op": "op-c", "receipt": {"receipt": "rcpt-0007"}, "seq": 12, "t": 9}
+{"action": "set_description", "kind": "intent", "op": "op-d", "seq": 13, "t": 4, "tool": "storefront"}
+{"kind": "sent", "op": "op-d", "seq": 14, "t": 4}
+{"kind": "timeout", "op": "op-d", "seq": 15, "t": 9}
+{"authoritative": false, "found": false, "kind": "status", "op": "op-d", "seq": 16, "t": 10}
+{"action": "refund", "kind": "intent", "op": "op-e", "seq": 17, "t": 5, "tool": "payments"}
+{"kind": "sent", "op": "op-e", "seq": 18, "t": 5}
+{"by": "operator", "kind": "stop", "op": "op-e", "seq": 19, "t": 5.5}
+{"kind": "cancel_ack", "op": "op-e", "seq": 20, "t": 6}
+{"action": "send", "kind": "intent", "op": "op-f", "seq": 21, "t": 6, "tool": "mailer"}
+{"kind": "sent", "op": "op-f", "seq": 22, "t": 6}
+{"kind": "timeout", "op": "op-f", "seq": 23, "t": 11}
+{"by": "ops on-call", "kind": "decision", "op": "op-f", "outcome": "confirmed", "reason": "customer forwarded the email", "seq": 24, "t": 40}

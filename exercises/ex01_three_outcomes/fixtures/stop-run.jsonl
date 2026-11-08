@@ -1,0 +1,8 @@
+{"action": "set_description", "args": {"sku": "SKU-4471", "text": "Waxed canvas tote, 18 L"}, "kind": "intent", "op": "op-4471", "seq": 1, "t": 0.0, "tool": "storefront"}
+{"kind": "sent", "op": "op-4471", "seq": 2, "t": 0.1}
+{"kind": "response", "ok": true, "op": "op-4471", "receipt": {"receipt": "rcpt-0001", "sku": "SKU-4471", "version": 4}, "seq": 3, "t": 0.6}
+{"action": "set_description", "args": {"sku": "SKU-9102", "text": "Enamel camp mug, 350 ml"}, "kind": "intent", "op": "op-9102", "seq": 4, "t": 0.7, "tool": "storefront"}
+{"kind": "sent", "op": "op-9102", "seq": 5, "t": 0.8}
+{"action": "set_description", "args": {"sku": "SKU-2208", "text": "Wool beanie, charcoal"}, "kind": "intent", "op": "op-2208", "seq": 6, "t": 0.9, "tool": "storefront"}
+{"by": "operator", "kind": "stop", "op": null, "seq": 7, "t": 1.0}
+{"kind": "timeout", "op": "op-9102", "seq": 8, "t": 5.8}

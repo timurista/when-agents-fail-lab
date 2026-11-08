@@ -1,0 +1,42 @@
+{"action": "set_description", "args": {"sku": "SKU-4471", "text": "Autumn copy for SKU-4471"}, "kind": "intent", "op": "op-4471", "request_hash": "1b4977dd2f59ecae", "seq": 1, "t": 2, "tool": "storefront"}
+{"kind": "sent", "op": "op-4471", "seq": 2, "t": 2}
+{"kind": "response", "ok": true, "op": "op-4471", "receipt": {"before": "", "receipt": "rcpt-0001", "sku": "SKU-4471", "version": 1}, "seq": 3, "t": 2}
+{"action": "set_description", "args": {"sku": "SKU-9102", "text": "Autumn copy for SKU-9102"}, "kind": "intent", "op": "op-9102", "request_hash": "cf424581bcf1ba26", "seq": 4, "t": 4, "tool": "storefront"}
+{"kind": "sent", "op": "op-9102", "seq": 5, "t": 4}
+{"kind": "response", "ok": true, "op": "op-9102", "receipt": {"before": "", "receipt": "rcpt-0002", "sku": "SKU-9102", "version": 1}, "seq": 6, "t": 4}
+{"action": "set_description", "args": {"sku": "SKU-2208", "text": "Autumn copy for SKU-2208"}, "kind": "intent", "op": "op-2208", "request_hash": "41597ae8fe080f9f", "seq": 7, "t": 6, "tool": "storefront"}
+{"kind": "sent", "op": "op-2208", "seq": 8, "t": 6}
+{"kind": "response", "ok": true, "op": "op-2208", "receipt": {"before": "", "receipt": "rcpt-0003", "sku": "SKU-2208", "version": 1}, "seq": 9, "t": 6}
+{"action": "set_description", "args": {"sku": "SKU-3390", "text": "Autumn copy for SKU-3390"}, "kind": "intent", "op": "op-3390", "request_hash": "7cb865684a996aaa", "seq": 10, "t": 8, "tool": "storefront"}
+{"kind": "sent", "op": "op-3390", "seq": 11, "t": 8}
+{"error": "SKU-3390 is locked for editing", "kind": "response", "ok": false, "op": "op-3390", "seq": 12, "t": 8}
+{"action": "set_description", "args": {"sku": "SKU-5160", "text": "Autumn copy for SKU-5160"}, "kind": "intent", "op": "op-5160", "request_hash": "54c31e6e42da1058", "seq": 13, "t": 10, "tool": "storefront"}
+{"kind": "sent", "op": "op-5160", "seq": 14, "t": 10}
+{"kind": "response", "ok": true, "op": "op-5160", "receipt": {"before": "", "receipt": "rcpt-0004", "sku": "SKU-5160", "version": 1}, "seq": 15, "t": 10}
+{"action": "set_description", "args": {"sku": "SKU-6623", "text": "Autumn copy for SKU-6623"}, "kind": "intent", "op": "op-6623", "request_hash": "75cd449ac1aca944", "seq": 16, "t": 12, "tool": "storefront"}
+{"kind": "sent", "op": "op-6623", "seq": 17, "t": 12}
+{"kind": "response", "ok": true, "op": "op-6623", "receipt": {"before": "", "receipt": "rcpt-0005", "sku": "SKU-6623", "version": 1}, "seq": 18, "t": 12}
+{"action": "set_description", "args": {"sku": "SKU-7015", "text": "Autumn copy for SKU-7015"}, "kind": "intent", "op": "op-7015", "request_hash": "4077d8c9f9bdc764", "seq": 19, "t": 14, "tool": "storefront"}
+{"kind": "sent", "op": "op-7015", "seq": 20, "t": 14}
+{"kind": "response", "ok": true, "op": "op-7015", "receipt": {"before": "", "receipt": "rcpt-0006", "sku": "SKU-7015", "version": 1}, "seq": 21, "t": 14}
+{"action": "set_description", "args": {"sku": "SKU-7348", "text": "Autumn copy for SKU-7348"}, "kind": "intent", "op": "op-7348", "request_hash": "b3feddd8ff38e585", "seq": 22, "t": 16, "tool": "storefront"}
+{"kind": "sent", "op": "op-7348", "seq": 23, "t": 16}
+{"kind": "response", "ok": true, "op": "op-7348", "receipt": {"before": "", "receipt": "rcpt-0007", "sku": "SKU-7348", "version": 1}, "seq": 24, "t": 16}
+{"action": "set_description", "args": {"sku": "SKU-8051", "text": "Autumn copy for SKU-8051"}, "kind": "intent", "op": "op-8051", "request_hash": "dd97d258cb6e49b9", "seq": 25, "t": 18, "tool": "storefront"}
+{"kind": "sent", "op": "op-8051", "seq": 26, "t": 18}
+{"kind": "response", "ok": true, "op": "op-8051", "receipt": {"before": "", "receipt": "rcpt-0008", "sku": "SKU-8051", "version": 1}, "seq": 27, "t": 18}
+{"action": "set_description", "args": {"sku": "SKU-8812", "text": "Autumn copy for SKU-8812"}, "kind": "intent", "op": "op-8812", "request_hash": "af925143dc5eaab8", "seq": 28, "t": 20, "tool": "storefront"}
+{"kind": "sent", "op": "op-8812", "seq": 29, "t": 20}
+{"kind": "response", "ok": true, "op": "op-8812", "receipt": {"before": "", "receipt": "rcpt-0009", "sku": "SKU-8812", "version": 1}, "seq": 30, "t": 20}
+{"action": "set_description", "args": {"sku": "SKU-1187", "text": "Autumn copy for SKU-1187"}, "kind": "intent", "op": "op-1187", "request_hash": "926feb14cf44627c", "seq": 31, "t": 22, "tool": "storefront"}
+{"kind": "sent", "op": "op-1187", "seq": 32, "t": 22}
+{"kind": "response", "ok": true, "op": "op-1187", "receipt": {"before": "", "receipt": "rcpt-0010", "sku": "SKU-1187", "version": 1}, "seq": 33, "t": 22}
+{"action": "set_description", "args": {"sku": "SKU-1342", "text": "Autumn copy for SKU-1342"}, "kind": "intent", "op": "op-1342", "request_hash": "7099f95ce9e3c2d1", "seq": 34, "t": 24, "tool": "storefront"}
+{"kind": "sent", "op": "op-1342", "seq": 35, "t": 24}
+{"kind": "response", "ok": true, "op": "op-1342", "receipt": {"before": "", "receipt": "rcpt-0011", "sku": "SKU-1342", "version": 1}, "seq": 36, "t": 24}
+{"action": "refund", "args": {"amount": 4800, "key": "rf-ORD-5521", "order": "ORD-5521"}, "kind": "intent", "op": "op-rf-5521", "request_hash": "fa0ac133dbf8205a", "seq": 37, "t": 27, "tool": "payments"}
+{"kind": "sent", "op": "op-rf-5521", "seq": 38, "t": 27}
+{"kind": "response", "ok": true, "op": "op-rf-5521", "receipt": {"amount": 4800, "order": "ORD-5521", "refund": "rf-0013"}, "seq": 39, "t": 27}
+{"action": "send", "args": {"subject": "Your refund for ORD-5521", "to": "jo.park@example.com"}, "kind": "intent", "op": "op-mail-5521", "request_hash": "58d06663f15069d3", "seq": 40, "t": 29, "tool": "mailer"}
+{"kind": "sent", "op": "op-mail-5521", "seq": 41, "t": 29}
+{"kind": "timeout", "op": "op-mail-5521", "seq": 42, "t": 29}

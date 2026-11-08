@@ -1,0 +1,12 @@
+{"action": "refund", "args": {"amount": 58.0, "order": "ORD-5531"}, "kind": "intent", "op": "op-refund", "request_hash": "9835670b7d158ddc", "seq": 1, "t": 0.0, "tool": "payments"}
+{"kind": "sent", "op": "op-refund", "seq": 2, "t": 0.0}
+{"kind": "timeout", "op": "op-refund", "seq": 3, "t": 0.0}
+{"action": "refund", "args": {"amount": 58.0, "order": "ORD-5531"}, "kind": "intent", "op": "op-refund", "request_hash": "9835670b7d158ddc", "seq": 4, "t": 5.0, "tool": "payments"}
+{"kind": "sent", "op": "op-refund", "seq": 5, "t": 5.0}
+{"kind": "response", "ok": true, "op": "op-refund", "receipt": {"amount": 58.0, "order": "ORD-5531", "refund": "rf-0001"}, "seq": 6, "t": 5.0}
+{"action": "send", "args": {"subject": "Your refund for ORD-5531", "to": "customer-5531@example.test"}, "kind": "intent", "op": "op-email", "request_hash": "719610e7af977fcf", "seq": 7, "t": 5.0, "tool": "mailer"}
+{"kind": "sent", "op": "op-email", "seq": 8, "t": 5.0}
+{"kind": "response", "ok": true, "op": "op-email", "receipt": {"message_id": "msg-0001", "subject": "Your refund for ORD-5531", "to": "customer-5531@example.test"}, "seq": 9, "t": 5.0}
+{"action": "set_description", "args": {"sku": "SKU-7730", "text": "Back in stock"}, "kind": "intent", "op": "op-restock", "request_hash": "e07dbba132454169", "seq": 10, "t": 5.0, "tool": "storefront"}
+{"kind": "sent", "op": "op-restock", "seq": 11, "t": 5.0}
+{"kind": "response", "ok": true, "op": "op-restock", "receipt": {"before": "", "receipt": "rcpt-0001", "sku": "SKU-7730", "version": 1}, "seq": 12, "t": 5.0}

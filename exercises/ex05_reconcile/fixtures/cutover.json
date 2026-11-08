@@ -1,0 +1,17 @@
+{
+  "note": "Synthetic. Six Fernhill orders already in both stores, then four operations through the dual writer.",
+  "orders": {
+    "O-11": ["delivered", 1],
+    "O-12": ["paid", 1],
+    "O-13": ["shipped", 1],
+    "O-14": ["paid", 1],
+    "O-15": ["delivered", 1],
+    "O-16": ["refunded", 1]
+  },
+  "ops": [
+    {"op": "op-12", "order": "O-12", "status": "shipped", "version": 2},
+    {"op": "op-17", "order": "O-17", "status": "paid", "version": 1},
+    {"op": "op-18", "order": "O-18", "status": "paid", "version": 1},
+    {"op": "op-14", "order": "O-14", "status": "packed", "version": 2}
+  ]
+}

@@ -1,0 +1,20 @@
+{"action": "set_description", "args": {"sku": "SKU-4471", "text": "Waxed canvas tote, 18 L"}, "kind": "intent", "op": "op-4471", "request_hash": "453a39db3d2b5e64", "seq": 1, "t": 0.0, "tool": "storefront"}
+{"kind": "sent", "op": "op-4471", "seq": 2, "t": 0.1}
+{"kind": "response", "ok": true, "op": "op-4471", "receipt": {"before": "Canvas tote", "receipt": "rcpt-0001", "sku": "SKU-4471", "version": 4}, "seq": 3, "t": 0.6}
+{"action": "refund", "args": {"amount": 42.0, "order": "FS-310"}, "kind": "intent", "op": "op-r310", "request_hash": "b218de9553d52eac", "seq": 4, "t": 0.7, "tool": "payments"}
+{"kind": "sent", "op": "op-r310", "seq": 5, "t": 0.8}
+{"kind": "response", "ok": true, "op": "op-r310", "receipt": {"amount": 42.0, "order": "FS-310", "refund": "rf-0001"}, "seq": 6, "t": 1.3}
+{"action": "send", "args": {"subject": "Your refund for FS-310", "to": "customer-310@example.com"}, "kind": "intent", "op": "op-m310", "request_hash": "7f548e35f12da797", "seq": 7, "t": 1.4, "tool": "mailer"}
+{"kind": "sent", "op": "op-m310", "seq": 8, "t": 1.5}
+{"action": "refund", "args": {"amount": 18.5, "order": "FS-311"}, "kind": "intent", "op": "op-r311", "request_hash": "a7442dd8eb70f1c2", "seq": 9, "t": 1.6, "tool": "payments"}
+{"kind": "sent", "op": "op-r311", "seq": 10, "t": 1.7}
+{"action": "set_description", "args": {"sku": "SKU-5530", "text": "Folding camp stool"}, "kind": "intent", "op": "op-5530", "request_hash": "196b6e3785322037", "seq": 11, "t": 1.8, "tool": "storefront"}
+{"kind": "sent", "op": "op-5530", "seq": 12, "t": 1.9}
+{"error": "SKU-5530 is archived", "kind": "response", "ok": false, "op": "op-5530", "seq": 13, "t": 2.0}
+{"action": "set_description", "args": {"sku": "SKU-9102", "text": "Enamel camp mug, 350 ml"}, "kind": "intent", "op": "op-9102", "request_hash": "d512e5353ca4ec19", "seq": 14, "t": 2.1, "tool": "storefront"}
+{"kind": "sent", "op": "op-9102", "seq": 15, "t": 2.2}
+{"action": "set_description", "args": {"sku": "SKU-2208", "text": "Wool beanie, charcoal"}, "kind": "intent", "op": "op-2208", "request_hash": "08edc3f8be24ebdb", "seq": 16, "t": 2.3, "tool": "storefront"}
+{"by": "operator", "kind": "stop", "op": null, "seq": 17, "t": 2.5}
+{"kind": "cancel_ack", "op": "op-r311", "seq": 18, "t": 2.6}
+{"kind": "timeout", "op": "op-m310", "seq": 19, "t": 6.5}
+{"kind": "timeout", "op": "op-9102", "seq": 20, "t": 7.2}

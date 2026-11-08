@@ -1,0 +1,54 @@
+{
+  "note": "Facilitator's key for the Chapter 14 drill. Synthetic. Written before the drill runs; keep it out of the room.",
+  "before": {
+    "op-r5103": "unknown",
+    "op-m5103": "unknown",
+    "op-s4471": "unknown",
+    "op-r5104": "failed",
+    "op-s9102": "unknown",
+    "op-r5105": "unknown",
+    "op-m5105": "never_sent"
+  },
+  "after": {
+    "op-r5103": "confirmed",
+    "op-m5103": "unknown",
+    "op-s4471": "confirmed",
+    "op-r5104": "failed",
+    "op-s9102": "unknown",
+    "op-r5105": "unknown",
+    "op-m5105": "never_sent"
+  },
+  "allowed": {
+    "op-r5103": [
+      "keep"
+    ],
+    "op-m5103": [
+      "escalate"
+    ],
+    "op-s4471": [
+      "keep"
+    ],
+    "op-r5104": [
+      "escalate"
+    ],
+    "op-s9102": [
+      "escalate",
+      "wait"
+    ],
+    "op-r5105": [
+      "resend",
+      "escalate",
+      "wait"
+    ],
+    "op-m5105": [
+      "resume",
+      "escalate"
+    ]
+  },
+  "stale_claims": [
+    "op-m5103",
+    "op-m5105",
+    "op-r5104",
+    "op-r5105"
+  ]
+}
