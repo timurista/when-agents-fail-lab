@@ -9,7 +9,7 @@ by Tim Urista. Python 3.10 or later, standard library only. No network, accounts
 
 Appendix A of the book covers setup, the runner, and adding your own exercise.
 
-- The book: https://timurista.ai/products/ (the Amazon link goes here once it is published)
+- The book, Kindle and paperback: https://www.amazon.com/dp/B0HQYB5PKR
 - Corrections and new versions: https://timurista.ai/labs/when-agents-fail
 - Source: https://github.com/timurista/when-agents-fail-lab
 
